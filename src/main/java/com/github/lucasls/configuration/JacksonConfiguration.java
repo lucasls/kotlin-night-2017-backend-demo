@@ -12,7 +12,7 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 /**
  * Created on 17/08/2017.
  *
- * @author Lucas Laurindo dos Santos (lucas.santos@ifood.com.br)
+ * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @Configuration
 public class JacksonConfiguration {

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController
 
 /**
  * Created on 31/08/2017.
- * @author Lucas Laurindo dos Santos (lucas.santos@ifood.com.br)
+ * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @RestController
 class PaymentController @Autowired constructor(

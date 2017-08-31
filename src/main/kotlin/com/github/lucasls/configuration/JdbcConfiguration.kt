@@ -11,7 +11,7 @@ import javax.annotation.PostConstruct
 
 /**
  * Created on 27/08/2017.
- * @author Lucas Laurindo dos Santos (lucas.santos@ifood.com.br)
+ * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @Configuration
 class JdbcConfiguration @Autowired constructor(

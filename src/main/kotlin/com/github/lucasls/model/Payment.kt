@@ -5,7 +5,7 @@ import java.time.ZonedDateTime
 
 /**
  * Created on 17/08/2017.
- * @author Lucas Laurindo dos Santos (lucas.santos@ifood.com.br)
+ * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 data class Payment(val id: Int = 0,
                    val createdAt: ZonedDateTime,

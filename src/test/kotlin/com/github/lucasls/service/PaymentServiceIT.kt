@@ -11,7 +11,7 @@ import java.math.BigDecimal
 /**
  * Created on 31/08/2017.
  *
- * @author Lucas Laurindo dos Santos (lucas.santos@ifood.com.br)
+ * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @RunWith(SpringRunner::class)
 @SpringBootTest(classes = arrayOf(Application::class))

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository
 
 /**
  * Created on 27/08/2017.
- * @author Lucas Laurindo dos Santos (lucas.santos@ifood.com.br)
+ * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @Repository
 class PaymentRepository @Autowired constructor(
