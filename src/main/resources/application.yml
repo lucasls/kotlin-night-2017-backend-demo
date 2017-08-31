@@ -1,0 +1,5 @@
+
+logging:
+  level:
+    ROOT: WARN
+    com.github.lucasls: DEBUG
