@@ -1,12 +1,10 @@
 package com.github.lucasls.configuration
 
 import com.github.lucasls.model.Payment
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Configuration
 import org.springframework.jdbc.core.JdbcTemplate
 import java.math.BigDecimal
-import java.util.Date
-import java.util.Random
+import java.util.*
 import javax.annotation.PostConstruct
 
 /**
@@ -14,8 +12,7 @@ import javax.annotation.PostConstruct
  * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @Configuration
-class JdbcConfiguration @Autowired constructor(
-    private val jdbcTemplate: JdbcTemplate) {
+class JdbcConfiguration (val jdbcTemplate: JdbcTemplate) {
 
     @PostConstruct
     fun setUp() {

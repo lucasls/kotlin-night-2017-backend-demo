@@ -4,7 +4,6 @@ import com.github.lucasls.model.Payment
 import com.github.lucasls.util.getZonedDateTime
 import com.github.lucasls.util.insertReturningKey
 import com.github.lucasls.util.toDate
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.jdbc.core.JdbcTemplate
 import org.springframework.stereotype.Repository
 
@@ -13,8 +12,7 @@ import org.springframework.stereotype.Repository
  * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @Repository
-class PaymentRepository @Autowired constructor(
-    private val jdbcTemplate: JdbcTemplate) {
+class PaymentRepository (val jdbcTemplate: JdbcTemplate) {
 
     fun findAll(): List<Payment> {
         val sql = Sql.SELECT_ALL
