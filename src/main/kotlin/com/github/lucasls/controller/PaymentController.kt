@@ -16,8 +16,7 @@ import org.springframework.web.bind.annotation.RestController
  * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @RestController
-class PaymentController @Autowired constructor(
-    private val paymentService: PaymentService) {
+class PaymentController(val paymentService: PaymentService) {
 
     private val log = LoggerFactory.getLogger(javaClass)
 
