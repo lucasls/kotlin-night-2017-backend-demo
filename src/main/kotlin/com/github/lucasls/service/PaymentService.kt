@@ -11,9 +11,9 @@ import java.time.ZonedDateTime
  * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @Component
-class PaymentService (val antiFraudService: AntiFraudService,
-    val externalPaymentService: ExternalPaymentService,
-    val paymentRepository: PaymentRepository
+class PaymentService (private val antiFraudService: AntiFraudService,
+    private val externalPaymentService: ExternalPaymentService,
+    private val paymentRepository: PaymentRepository
 ) {
 
     private val log = LoggerFactory.getLogger(javaClass)

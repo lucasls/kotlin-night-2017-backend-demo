@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository
  * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @Repository
-class PaymentRepository (val jdbcTemplate: JdbcTemplate) {
+class PaymentRepository (private val jdbcTemplate: JdbcTemplate) {
 
     fun findAll(): List<Payment> {
         val sql = Sql.SELECT_ALL

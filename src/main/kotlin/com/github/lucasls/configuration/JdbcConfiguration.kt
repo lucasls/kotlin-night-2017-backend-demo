@@ -12,7 +12,7 @@ import javax.annotation.PostConstruct
  * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @Configuration
-class JdbcConfiguration (val jdbcTemplate: JdbcTemplate) {
+class JdbcConfiguration (private val jdbcTemplate: JdbcTemplate) {
 
     @PostConstruct
     fun setUp() {
