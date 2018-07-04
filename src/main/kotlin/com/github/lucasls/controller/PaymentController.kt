@@ -4,7 +4,6 @@ import com.github.lucasls.model.Payment
 import com.github.lucasls.service.PaymentRequest
 import com.github.lucasls.service.PaymentService
 import org.slf4j.LoggerFactory
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -16,8 +15,7 @@ import org.springframework.web.bind.annotation.RestController
  * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @RestController
-class PaymentController @Autowired constructor(
-    private val paymentService: PaymentService) {
+class PaymentController(val paymentService: PaymentService) {
 
     private val log = LoggerFactory.getLogger(javaClass)
 

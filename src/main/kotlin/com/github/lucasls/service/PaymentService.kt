@@ -3,7 +3,6 @@ package com.github.lucasls.service
 import com.github.lucasls.model.Payment
 import com.github.lucasls.repository.PaymentRepository
 import org.slf4j.LoggerFactory
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 import java.time.ZonedDateTime
 
@@ -12,8 +11,7 @@ import java.time.ZonedDateTime
  * @author Lucas Laurindo dos Santos (lls.lucas@gmail.com)
  */
 @Component
-class PaymentService @Autowired constructor(
-    private val antiFraudService: AntiFraudService,
+class PaymentService (private val antiFraudService: AntiFraudService,
     private val externalPaymentService: ExternalPaymentService,
     private val paymentRepository: PaymentRepository
 ) {
